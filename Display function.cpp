@@ -6,13 +6,13 @@ void display(int x,int y){
  //Draw a board into BUFFER
  drawBoard();
  
- //Print "X" and "O" into BUFFER
+ //Display "X" and "O" into BUFFER
  for(int i=0;i<12;i++)
   for(int j=0;j<19;j++)
    caro(2+j*4,1+i*2,Board[i][j]);
    
     
- //Make a MOVER with 3 columns, then print it into BUFFER
+ //Make a MOVER with 3 columns, then display it into BUFFER
  caro(x-1,y,buffer[y][x-1].string,176);  /left
  caro(x,y,buffer[y][x].string,176);      //middle
  caro(x+1,y,buffer[y][x+1].string,176);  //right
